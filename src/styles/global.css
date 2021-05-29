@@ -1,0 +1,35 @@
+:root {
+    /* Colors: */
+    --white: #FFFFFF;
+    --black: #000000;
+    --gray-light: #CBCBCB;
+    --gray: #8D9DA2;
+    --gray-dark: #292929;
+    --red: #F12256;
+    --pink: #D842BD;
+    --blue-dark: #001489;
+    --purplish-blue: #3634F7;
+    --purple: #A32ADA;
+    --violet: #5538EE;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Rubik, Arial, sans-serif;
+}
+
+html, body {
+    color: white;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+a, input, button {
+    outline: none;
+}

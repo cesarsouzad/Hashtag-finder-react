@@ -1,0 +1,56 @@
+.listItems {
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid #5985b566 ;
+    padding-top:0 ;
+    margin: 0 15px;
+    font-size: 0.8em;
+    color: #72EFDB;
+}
+
+.listItems .hashtag {
+    color: white;
+}
+
+.listItems div {
+    padding: 15px;
+}
+
+.hashtag {
+   margin-right: auto;
+}
+
+.time {
+    margin: 0 40px 0 50px;
+}
+
+@media (max-width: 600px){
+    .listItems{
+        margin: 0 20px;
+    }
+
+    .time{
+        margin: 0 0 0 20px;
+    }
+
+  
+}
+
+@media (max-width: 420px){
+    .listItems{
+        padding: 0 ;
+        margin: 0;
+    }
+
+    .listItems div{
+        padding: 10px;
+    }
+
+    .time{
+        margin: 0 0 0 20px;
+    }
+
+    .listTop{
+        border-radius: 14px 14px 0 0;
+    }
+}

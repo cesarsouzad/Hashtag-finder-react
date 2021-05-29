@@ -1,0 +1,104 @@
+.body {
+    width: 100%;
+    height: 100%;
+    background: url(../../assets/img/table-bg.jpg) no-repeat #18326B ;
+    background-size: cover;
+    padding-bottom: 50px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.container h2 {
+    margin: 25px 0;
+    color: #72EFDB;
+}
+
+.list {
+    border-radius: 14px;
+    background: rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.listTop {
+    border-radius: 14px;
+    background: rgba(0, 0, 0, 0.1);
+
+}
+
+.listHeader {
+    display: flex;
+    margin: 0 15px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 0.9em;
+    color: #72EFDB;
+}
+
+.listHeader .hashtag {
+    text-align: inherit;
+}
+
+.listHeader div{
+    padding: 15px;
+}
+
+.hashtag {
+   margin-right: auto;
+}
+
+.time {
+    margin: 0 40px 0 50px;
+}
+
+@media (max-width: 800px){
+    .container{
+        width: 90%;
+    }
+
+    .listHeader{
+        margin-right: 15px;
+    }
+
+}
+
+@media (max-width: 600px){
+    .container{
+        width: 95%;
+    }
+
+    .time {        
+            margin: 0 10px 0 10px;
+        
+    }   
+
+}
+
+
+@media (max-width: 420px){
+  
+
+    .container h2 {
+        text-align: center;
+    }
+
+    .listHeader {
+       margin: 10px 0 0 0;
+    }
+
+    .listHeader div {
+        padding: 10px;
+    }
+
+    .time {
+        margin: 0 0 0 20px;
+    }
+
+    .listTop {
+        border-radius: 14px 14px 0 0;
+    }
+}

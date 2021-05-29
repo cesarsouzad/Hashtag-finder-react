@@ -1,0 +1,129 @@
+.bgabout {
+    background: linear-gradient(180deg, #0A174400 0%, #0A1744 100%) no-repeat, url(../../assets/img/about-hero-bg.jpg) no-repeat,#0A1744;
+    background-size:  100vw 42vmax, auto 100vmax;
+    background-position:  0% 58.5vmax, 0% 0%;
+}
+
+.firstContent {
+    display: flex;
+    flex-flow: wrap;
+    margin: auto 40px;
+    justify-content: space-between;
+}
+
+.divsobreprojeto {
+    width: 40vw;
+    margin-top: 100px;
+}
+
+.titulosobreprojeto {
+    font-size: 5vw;
+    margin: 40px auto;
+}
+
+.paragrafosobreprojeto {
+    text-align: left;
+    font-size: 21px;
+}
+
+.divilustration {
+    margin-top: 185px;
+    display: flex;
+}
+
+.divilustration img {
+    display: flex;
+    width: 35vw;
+}
+
+.who{
+    font-size: 3vw;
+    margin-left: 7rem;
+    line-height: 5;
+}
+.wrapperflex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+.container {
+    overflow: hidden;
+    box-shadow: 0px 5px 10px 0px #5538EE14;
+    background-color: #0B1A49;
+    text-align: center;
+    border-radius: 1rem;
+    position: relative;
+    width: 280px;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    border: 1px solid rgb(255 255 255 / 50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .bannerimg {
+    position: absolute;
+    height: 10rem;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+    
+  .profileimg {
+    width: 128px;
+    clip-path: circle(60px at center);
+    margin-top: 1.5rem;
+    align-self: center;
+    object-fit: cover; /*ajusta o enquadramento da imagen de tamanhos diferentes*/
+    height: 128px;
+  }
+  
+  .name {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #72EFDB;
+  }
+  
+  .description {
+    margin: 1rem 2rem;
+    font-size: 0.9rem;
+    color: #D9D9D9;
+  }
+  .github, .email, .linkedin{
+      margin: 15px 10px;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    .firstContent {
+        display: flex;
+        flex-flow: wrap;
+        margin: auto 40px;
+        justify-content: space-evenly;
+    }
+  }
+  @media only screen and (max-width: 800px){
+    .firstContent {
+        display: flex;
+        flex-flow: wrap;
+        margin: auto 40px;
+        justify-content: space-evenly;
+    }
+    .divsobreprojeto {
+        width: 70vw;
+        margin-top: 70px;
+    }
+    .divilustration {
+        margin-top: 130px;
+        display: flex;
+    }
+    .divilustration img {
+        display: flex;
+        width: 55vw;
+    }
+    .who{
+        font-size: 4vw;
+    }
+  }

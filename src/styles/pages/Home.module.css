@@ -1,0 +1,303 @@
+.hero {
+    height: 90vh;
+    width: 100vw;
+    background: url(../../assets/img/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero .heroContent {
+    width: 75%;
+    height: calc(100vh - 90px);
+    margin: auto;
+    display: flex;
+    flex-flow: column;
+}
+
+.hero .heroContent .titles h1 {
+    margin-top: 200px;
+    font-size: 3.5rem;
+    width: 50%;
+}
+
+.hero .heroContent .titles h2 {
+    font-weight: 400;
+    width: 40%;
+}
+
+.hero .heroContent form {
+    margin: 25vh auto 0;
+    width: 60%;
+    max-width: 860px;
+    min-width: 620px;
+    display: flex;
+    background-color: #1E3E7B;
+    border-radius: 100px;
+}
+
+.hero .heroContent form button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.hero .heroContent form button img {
+    padding: 25px;
+}
+
+.hero .heroContent form .inputMain {
+    height: 100%;
+    width: calc(100% - 30px);
+    font-size: 2rem;
+    color: white;
+    border: none;
+    background-color: transparent;
+}
+
+.hero .heroContent form .inputMain::placeholder {
+    color: var(--gray);
+    font-size: 2rem;
+}
+
+.transition {
+    margin-top: -150px;
+    height: 350px;
+    background-image: linear-gradient(to bottom, transparent 0%, #0A1744 40%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.transition .switchResults {
+    display: none;
+}
+
+.mainContentWrapper {
+    margin-top: -140px;
+    width: 100vw;
+    background-color: #0A1744;
+}
+
+.mainContentWrapper h2 {
+    padding-top: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.mainContentWrapper ul li {
+    list-style: none;
+}
+
+.mainContentWrapper .mainContent {
+    margin: auto;
+    padding: 80px 0;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+}
+
+.mainContentWrapper .mainContentResponsive {
+    display: none;
+}
+
+.mainContentWrapper .mainContent .imagesResults {
+    width: 41%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+        /* background-color: red; */
+}
+
+.mainContentWrapper .mainContent .imagesResults ul {
+    width: 100%;
+}
+
+.mainContentWrapper .mainContent .imagesResults ul li {
+    display: inline-table;
+}
+
+.mainContentWrapper .mainContent .textsResults {
+    width: 55%;
+}
+
+@media only screen and (max-width: 1400px) {
+    .hero .heroContent h1 {
+        width: 60%;
+        min-width: 570px;
+    }
+
+    .hero .heroContent h2 {
+        width: 50%;
+        min-width: 500px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .hero .heroContent h1 {
+        width: 80%;
+        min-width: 570px;
+    }
+
+    .hero .heroContent h2 {
+        width: 70%;
+        min-width: 500px;
+    }
+
+    .mainContentWrapper .mainContent {
+        width: 100%;
+    }
+
+    .mainContentWrapper .mainContent .imagesResults {
+        width: 50%;
+        min-width: 200px;
+        justify-content: center;
+    }
+
+    .mainContentWrapper .mainContent .textsResults {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .hero .heroContent {
+        min-width: 500px;
+    }
+
+    .hero .heroContent .titles h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero .heroContent .titles h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero .heroContent .titles,
+    .hero .heroContent form {
+        min-width: 500px;
+    }
+
+    .hero .heroContent form button img {
+        padding: 15px;
+    }
+
+    .hero .heroContent form .inputMain,
+    .hero .heroContent form .inputMain::placeholder {
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .hero .heroContent,
+    .hero .heroContent .titles,
+    .hero .heroContent .titles h1,
+    .hero .heroContent .titles h2,
+    .hero .heroContent form {
+        width: 90%;
+        min-width: 90%;
+    }
+
+    .transition .switchResults {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .transition .switchResults span {
+        padding: 10px 0 7px;
+        width: 40%;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .transition .baseButtons {
+        margin-top: 5px;
+        width: 80%;
+        height: 2px;
+        background-color: #41558E;
+        display: flex;
+        align-items: center;
+    }
+
+    .transition .baseButtons div {
+        width: 50%;
+        height: 4px;
+        background-color: #72EFDB;
+        border-radius: 100px;
+        transition: all 0.5s;
+    }
+
+    .mainContentWrapper h2,
+    .mainContentWrapper .mainContent {
+        display: none;
+    }
+
+    .mainContentWrapper .mainContentResponsive {
+        width: 100%;
+        display: block;
+    }
+
+    .mainContentWrapper .mainContentResponsive .imagesResults {
+        padding: 30px 0 70px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mainContentWrapper .mainContentResponsive .imagesResults ul {
+        width: 100%;
+        text-align: center;
+    }
+
+    .mainContentWrapper .mainContentResponsive .imagesResults ul li {
+        display: inline-table;
+    }
+
+    .mainContentWrapper .mainContentResponsive .textsResults {
+        padding: 30px 0 70px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .hero {
+        background: url(../../assets/img/mobile-hero-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .hero .heroContent {
+        justify-content: flex-start;
+    }
+
+    .hero .heroContent .titles h1 {
+        margin-top: 120px;
+    }
+
+    .hero .heroContent .titles h1 {
+        font-size: 1.9rem;
+        width: 100%;
+    }
+
+    .hero .heroContent .titles h2 {
+        font-size: 0.9rem;
+        width: 100%;
+    }
+
+    .hero .heroContent form {
+        margin: 70px auto 0;
+    }
+
+    .hero .heroContent form button img {
+        padding: 15px;
+        width: 50px;
+    }
+
+    .hero .heroContent form .inputMain,
+    .hero .heroContent form .inputMain::placeholder {
+        font-size: 1.1rem;
+    }
+}

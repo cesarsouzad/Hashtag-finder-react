@@ -1,0 +1,102 @@
+.headerWrapper {
+    width: 100vw;
+    height: 90px;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    background: #0a17445b 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 29px #5538EE1F;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    z-index: 1;
+}
+
+.headerWrapper .linksWrapper,
+.headerWrapper .linkWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerWrapper .linksWrapper {
+    width: 310px;
+}
+
+.headerWrapper .linksWrapper .firstButton,
+.headerWrapper .linksWrapper .secondButton,
+.headerWrapper .linkWrapper .firstButton,
+.headerWrapper .linkWrapper .secondButton {
+    padding: 8px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    display: flex;
+    font-size: 1.1rem;
+    letter-spacing: 2.55px;
+}
+
+.headerWrapper .linksWrapper .firstButton img,
+.headerWrapper .linksWrapper .secondButton img,
+.headerWrapper .linkWrapper .firstButton img,
+.headerWrapper .linkWrapper .secondButton img {
+    margin-right: 10px;
+}
+
+.headerWrapper .linksWrapper .firstButton,
+.headerWrapper .linkWrapper .firstButton {
+    background-color: #72EFDB;
+    color: #0B1741;
+}
+
+.headerWrapper .linksWrapper .secondButton,
+.headerWrapper .linkWrapper .secondButton {
+    background-color: #1E3E7B;
+    color: white;
+}
+
+@media only screen and (max-width: 620px) {
+    .headerWrapper {
+        height: 70px;
+        padding: 15px 20px;
+        align-items: center;
+    }
+
+    .headerWrapper .linkImageHome img {
+        height: 40px;
+        /* display: contents; */
+    }
+
+    .headerWrapper .linksWrapper {
+        width: 280px;
+    }
+
+    .headerWrapper .linksWrapper .firstButton,
+    .headerWrapper .linksWrapper .secondButton,
+    .headerWrapper .linkWrapper .firstButton,
+    .headerWrapper .linkWrapper .secondButton {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .headerWrapper .linkImageHome img {
+        height: 23px;
+    }
+
+    .headerWrapper .linksWrapper {
+        width: 220px;
+    }
+
+    .headerWrapper .linksWrapper .firstButton,
+    .headerWrapper .linksWrapper .secondButton,
+    .headerWrapper .linkWrapper .firstButton,
+    .headerWrapper .linkWrapper .secondButton {
+        padding: 8px 15px;
+        font-size: 0.8rem;
+    }
+
+    .headerWrapper .linksWrapper .firstButton {
+        margin-right: 10px;
+    }
+}

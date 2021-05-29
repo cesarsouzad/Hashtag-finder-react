@@ -1,0 +1,54 @@
+.textResultWrapper {
+    margin: 15px;
+    padding: 20px 0;
+    min-height: 200px;
+    background-color: #1E3E7B17;
+    border: 1px solid #FFFFFF24;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.textResultWrapper .content {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+.textResultWrapper .content .imageWrapper {
+    margin: 0 20px;
+    width: 82px;
+    height: 82px;
+    min-width: 82px;
+    min-height: 82px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.textResultWrapper .content .imageWrapper img {
+    width: 100%;
+    height: 100%;
+}
+.textResultWrapper .content .textWrapper {
+    margin-right: 15px;
+    width: 75%;
+}
+.textResultWrapper .content .textWrapper h1 {
+    margin-bottom: 5px;
+    font-size: 1.7rem;
+}
+.textResultWrapper .content .textWrapper h1 span {
+    color: #757D97;
+    font-weight: 400;
+    font-size: 1rem;
+}
+.textResultWrapper .linkWrapper {
+    padding-left: 10%;
+
+}
+.textResultWrapper .linkWrapper a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #72EFDB;
+}
+.textResultWrapper .linkWrapper a:hover {
+    text-decoration: underline;
+}
